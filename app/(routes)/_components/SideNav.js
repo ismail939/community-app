@@ -1,6 +1,6 @@
 "use client"
-import MenuList from '@/app/_utils/MenuList'
-import { Button } from '@/components/ui/button'
+import MenuList from '/app/_utils/MenuList'
+import { Button } from '/components/ui/button'
 
 import { LogIn } from 'lucide-react'
 import Image from 'next/image'
@@ -30,9 +30,9 @@ function SideNav({toggleSideBar}) {
         </div>
         <div className='absolute bottom-10 flex gap-3 items-center'>
      
-            <h2>
+        <Link href = '/sign-in'><h2>
           <Button variant="ghost" className='flex gap-2 items-center cursor-pointer'><LogIn/>
-          Sign In</Button></h2>
+          Sign In</Button></h2></Link>
         </div>
     </div>
   )
